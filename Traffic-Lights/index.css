@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: aqua;
+    margin-top: 5rem;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 4rem 5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0, 3);
+}
+
+.lampu-trafic {
+    background: #333;
+    width: 120px;
+    margin: 0 auto 2em;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0, 5);
+}
+
+.lampu {
+    width: 80px;
+    height: 80px;
+    margin: 15px auto;
+    border-radius: 50%;
+    opacity: 0.3;
+    transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lampu.merah {
+    background: red;
+}
+
+.lampu.hijau {
+    background: green;
+}
+
+.lampu.kuning {
+    background: yellow;
+}
+
+.lampu.nyala {
+    opacity: 1;
+    box-shadow: 0 0 30px currentColor;
+    animation: berkedip 0.5s ease-in-out;
+}
+
+@keyframes berkedip {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {transform: scale(1.1);}
+}
+
+.kontrol, .kontrol-manual {
+    margin: 1em 0;
+}
+
+.tombol {
+    padding: 17px 20px;
+    margin: 5px;
+    border-radius: 13px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s ease-in;
+}
+
+.tombol.manual {
+    padding: 17px 25px;
+    border-radius: 13px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    background-color: grey;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.tombol-manual {
+    margin-left: 10px;
+}
+
+.tombol:hover {
+    transform: scale(1.1);
+    background-color: rgb(0, 0, 126);
+}
+
+.tombol-manual:hover {
+    transform: scale(1.1);
+    background-color: rgb(99, 98, 98);
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampu merah</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div class="container">
+    <h2>Simulasi lampu lalu lintas</h2>
+
+    <div class="lampu-trafic">
+        <div class="lampu merah" id="lampu-merah" ></div>
+        <div class="lampu kuning" id="lampu-kuning" ></div>
+         <div class="lampu hijau" id="lampu-hijau" ></div>
+    </div>
+
+    <div class="kontrol">
+        <button class="tombol" id="mulai"> Mulai otomatis </button>
+        <button class="tombol" id="berhenti"> Berhenti </button>
+    </div>
+
+    <div class="kontrol-manual">
+        <button class="tombol manual" id="btn-merah"> Merah </button>
+        <button class="tombol manual" id="btn-kuning"> Kuning </button>
+         <button class="tombol manual" id="btn-hijau"> Hijau </button>
+    </div>
+    
+    <p id="status" style="font-weight: bold;
+    font-size: 1rem;"> Status : Mati </p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
